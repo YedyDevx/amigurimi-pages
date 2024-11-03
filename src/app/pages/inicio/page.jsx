@@ -8,7 +8,7 @@ import Footer from "../../components/Footer";
 export default function Inicio() {
   return (
     <div >
-      <div className="max-w-[1500px] m-auto relative ">
+      <div>
         <SectionWelcome/>
         <FooterWelcome />
         <Slider/>

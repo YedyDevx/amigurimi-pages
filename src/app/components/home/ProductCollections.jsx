@@ -44,13 +44,12 @@ const CollectionItems = [
 export default function Collections () {
    return ( 
       <>
-         <div id="allproducts" className="text-3xl mx-12 my-3 font-lato font-bold text-[#1f6c76]">Collections:</div>
+         <div id="allproducts" className="text-3xl mx-12 mt-12 mb-6 font-lato font-bold text-[#1f6c76]">Collections:</div>
          <div className="w-full flex flex-wrap justify-center gap-5">
             {CollectionItems.map((item, index) => (
                <div 
                   key={index} 
-                  className="flex items-center rounded-2xl cursor-pointer px-10 py-5 shadow-gray-400 shadow-md gap-5 bg-[rgba(255,255,255,0.5)] 
-                             hover:bg-[#ffc4656b] transition duration-300 ease-in-out"
+                  className="flex items-center rounded-2xl cursor-pointer w-72 h-20 justify-center shadow-gray-400 shadow-md gap-5  bg-[rgba(255,255,255,0.5)]  hover:bg-[#ffc4656b] transition duration-300 ease-in-out"
                >
                   {item.icon}
                   <div className="font-lato">

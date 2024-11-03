@@ -21,9 +21,9 @@ const footerItems = [
 
 export default function FooterWelcome() {
    return (
-      <div className="w-full flex justify-evenly gap-12 relative z-10">
+      <div className="w-full flex justify-evenly gap-2 relative z-10 flex-wrap mt-10">
          {footerItems.map((item, index) => (
-            <div key={index} className="flex items-center rounded-2xl mt-10 px-10 py-5 shadow-gray-400 shadow-md gap-5 bg-[rgba(255,255,255,0.5)]">
+            <div key={index} className="flex justify-center items-center rounded-2xl  w-80 h-20  shadow-gray-400 shadow-md gap-3 bg-[rgba(255,255,255,0.5)]">
                {item.icon}
                <div className="font-lato">
                   <AnimatedShinyText>

@@ -21,13 +21,13 @@ export default function Slider() {
       { name: "Zoro - One Piece", category: "Anime", price: "80.000$", img: Img9 },
    ];
    return (
-      <div className="p-6 w-full h-[600px]">
-         <div className='flex justify-between px-10 mb-2'>
-            <div className='text-3xl font-lato font-bold text-[#1f6c76]'>
+      <div className="px-4 w-full h-[500px]">
+         <div className='flex justify-between px-5 my-5'>
+            <div className='sm:text-3xl text-base font-lato font-bold text-[#1f6c76]'>
                Best selling products:
             </div>
             <Link href="#allproducts" 
-            className="text-xl font-itim text-[#fb9a00] border-b-2 border-transparent hover:border-[#fb9a00] transition-all duration-300">
+            className="sm:text-xl  text-base font-itim text-[#fb9a00] border-b-2 border-transparent hover:border-[#fb9a00] transition-all duration-300">
                All Products
          </Link>
          </div>
