@@ -34,14 +34,14 @@ const listCollection = [
 
 export default function ListCollections () {
    return(
-      <div>
-         <div className="flex flex-col items-center gap-3 mb-5 text-[#1f6c76]">
-            <div className="font-lato text-3xl font-bold">NUESTRA COLECCION AMIGURUMIS</div>
+      <div className="bg-[#83838322]">
+         <div className="flex flex-col items-center gap-3 mb-5 text-[#1f6c76] ">
+            <div className="font-lato text-3xl font-bold pt-5">NUESTRA COLECCION AMIGURUMIS</div>
             <AnimatedShinyText>
                <div className="font-itim text-xl w-full ">Amigurimis que tenemos disponibles:</div>
             </AnimatedShinyText>
          </div>
-         <div className="flex flex-wrap gap-6 justify-center items-center p-3 rounded-xl mx-16 shadow-lg shadow-gray-500">
+         <div className="flex flex-wrap gap-6 justify-center items-center p-3 rounded-xl mx-16 shadow-lg shadow-gray-500 bg-white">
             {listCollection.map((item, index) => (
                <div 
                key={index}

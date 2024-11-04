@@ -5,7 +5,7 @@ export default function Products() {
   return (
     <div>
       <Header/>
-      <div className="mt-20">
+      <div className="mt-16">
         <Collections/>
       </div>
     </div>
