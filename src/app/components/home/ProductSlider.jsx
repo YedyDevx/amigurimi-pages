@@ -1,42 +1,40 @@
+'use client';
 import Image from 'next/image';
-import Link from 'next/link';
 import Marquee from '../../../components/ui/marquee';
-import Img1 from '../../images/products/alicia.png';
+import { HiOutlineShoppingCart } from "react-icons/hi";
+import { useCart } from '../header/CartContext';
 import Img2 from '../../images/products/florero.png';
 import Img3 from '../../images/products/caroline.png';
 import Img6 from '../../images/products/payasoalicia.png';
 import Img7 from '../../images/products/ricky.png';
 import Img8 from '../../images/products/totoro.png';
 import Img9 from '../../images/products/zoro.png';
-import { HiOutlineShoppingCart } from "react-icons/hi";
 
 export default function Slider() {
+   const { addToCart } = useCart(); 
+
    const products = [
-      { name: "Alicia del Pais de las Maravillas", category: "Movie", price: "120.000$", img: Img1 },
-      { name: "Vicent Van Gogh", category: "Art", price: "150.000$", img: Img2 },
-      { name: "Caroline", category: "Movies", price: "80.000$", img: Img3 },
-      { name: "El Sombrerero", category: "Movies", price: "120.000$", img: Img6 },
-      { name: "Ricky", category: "Series", price: "80.000$", img: Img7 },
-      { name: "Totoro", category: "Anime", price: "150.000$", img: Img8 },
-      { name: "Zoro - One Piece", category: "Anime", price: "80.000$", img: Img9 },
+      { id: 1, name: "Vicent Van Gogh", category: "Art", price: "150.000$", img: Img2 },
+      { id: 2, name: "Caroline", category: "Movies", price: "80.000$", img: Img3 },
+      { id: 3, name: "El Sombrerero", category: "Movies", price: "120.000$", img: Img6 },
+      { id: 4, name: "Ricky", category: "Series", price: "80.000$", img: Img7 },
+      { id: 5, name: "Totoro", category: "Anime", price: "150.000$", img: Img8 },
+      { id: 7, name: "Zoro - One Piece", category: "Anime", price: "80.000$", img: Img9 }
    ];
+
    return (
       <div className="px-4 w-full h-[500px]">
          <div className='flex justify-between px-5 my-5'>
             <div className='sm:text-3xl text-base font-lato font-bold text-[#1f6c76]'>
-               Best selling products:
+               Productos y colecciones:
             </div>
-            <Link href="#allproducts" 
-            className="sm:text-xl  text-base font-itim text-[#fb9a00] border-b-2 border-transparent hover:border-[#fb9a00] transition-all duration-300">
-               All Products
-         </Link>
          </div>
          <Marquee gradient={false} speed={40} pauseOnHover={true}>
             <div className="flex gap-8 flex-wrap justify-center">
                {products.map((product, index) => (
                   <div
-                  key={index}
-                  className="w-64 h-[440px] mb-5 bg-white shadow-lg shadow-gray-600 rounded-2xl p-4 flex flex-col items-center transition-transform transform hover:scale-105 duration-300 ease-in-out"
+                     key={index}
+                     className="w-64 h-[440px] mb-5 bg-white shadow-lg shadow-gray-600 rounded-2xl p-4 flex flex-col items-center transition-transform transform hover:scale-105 duration-300 ease-in-out"
                   >
                      <div className="w-full h-60 rounded-lg overflow-hidden mb-4">
                         <Image
@@ -58,7 +56,10 @@ export default function Slider() {
                         </p>
                      </div>
                      <div className="flex gap-4 w-full">
-                        <button className="w-1/3 bg-[#fb9a00] text-white font-bold py-2 rounded-lg hover:bg-[#ffae4a] transition-colors duration-300 flex justify-center items-center">
+                        <button 
+                           className="w-1/3 bg-[#fb9a00] text-white font-bold py-2 rounded-lg hover:bg-[#ffae4a] transition-colors duration-300 flex justify-center items-center" 
+                           onClick={() => addToCart(product)} 
+                        >
                            <HiOutlineShoppingCart className="text-2xl" />
                         </button>
                         <button className="w-2/3 bg-[#f24877] text-white font-bold py-2 rounded-lg hover:bg-pink-600 transition-colors duration-300">

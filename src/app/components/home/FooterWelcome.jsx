@@ -21,7 +21,7 @@ const footerItems = [
 
 export default function FooterWelcome() {
    return (
-      <div className="w-full flex justify-evenly gap-2 relative z-10 flex-wrap mt-10">
+      <div className="max-w-[1500px] mx-auto flex justify-evenly gap-2 relative z-10 flex-wrap mt-10">
          {footerItems.map((item, index) => (
             <div key={index} className="flex justify-center items-center rounded-2xl  w-80 h-20  shadow-gray-400 shadow-md gap-3 bg-[rgba(255,255,255,0.5)]">
                {item.icon}

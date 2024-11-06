@@ -2,54 +2,60 @@ import AnimatedShinyText from "../../../components/ui/animated-shiny-text";
 import { FaDragon, FaPalette, FaLink, FaCogs } from "react-icons/fa";
 import { IoFlowerSharp } from "react-icons/io5";
 import { AiOutlineProduct } from "react-icons/ai";
-import { BiSolidCameraMovie } from "react-icons/bi";
+import { BiSolidCameraMovie } from "react-icons/bi"
+import { SiMarvelapp } from "react-icons/si";
 
 const CollectionItems = [
    {
-      icon: <AiOutlineProduct className="text-[46px] text-[#fb9a00]" />,
-      title: "All Products",
-      description: "Free orders with discounts."
+      icon: <AiOutlineProduct className="text-[46px] text-[#1f6c76]" />,
+      title: "Todos",
+      description: "Todos los productos."
    },
    {
-      icon: <BiSolidCameraMovie className="text-[46px] text-[#fb9a00]" />,
-      title: "Movie",
-      description: "Movie Characters."
+      icon: <BiSolidCameraMovie className="text-[46px] text-[#1f6c76]" />,
+      title: "Caricaturas",
+      description: "De series y peliculas."
    },
    {
-      icon: <FaDragon className="text-[46px] text-[#fb9a00]" />,
+      icon: <FaDragon className="text-[46px] text-[#1f6c76]" />,
       title: "Anime",
-      description: "Anime Characters."
+      description: "Personajes de Animes."
    },
    {
-      icon: <FaPalette className="text-[46px] text-[#fb9a00]" />,
-      title: "Art",
-      description: "Amigurimis inspired by art."
+      icon: <SiMarvelapp  className="text-[46px] text-[#1f6c76]" />,
+      title: "Heroes",
+      description: "Personajes de Heroes."
    },
    {
-      icon: <IoFlowerSharp className="text-[46px] text-[#fb9a00]" />,
-      title: "Flowers",
-      description: "Crochet flowers."
+      icon: <FaPalette className="text-[46px] text-[#1f6c76]" />,
+      title: "Artistas",
+      description: "Artistas personalizados."
    },
    {
-      icon: <FaLink className="text-[46px] text-[#fb9a00]" />,
-      title: "Keychains",
-      description: "Crochet keychains."
+      icon: <IoFlowerSharp className="text-[46px] text-[#1f6c76]" />,
+      title: "Flores",
+      description: "Todas las flores."
    },
    {
-      icon: <FaCogs className="text-[46px] text-[#fb9a00]" />,
-      title: "Custom Characters",
-      description: "Anything personalized."
+      icon: <FaLink className="text-[46px] text-[#1f6c76]" />,
+      title: "Llaveros",
+      description: "Llaveros personalizados."
+   },
+   {
+      icon: <FaCogs className="text-[46px] text-[#1f6c76]" />,
+      title: "Personalizados",
+      description: "Amigurimis personalizados."
    },
 ];
+
 export default function Collections () {
    return ( 
       <>
-         <div id="allproducts" className="text-3xl mx-12 mt-12 mb-6 font-lato font-bold text-[#1f6c76]">Collections:</div>
-         <div className="w-full flex flex-wrap justify-center gap-5">
+         <div className="max-w-[1500px] mx-auto flex flex-wrap mt-12  justify-center gap-5">
             {CollectionItems.map((item, index) => (
                <div 
                   key={index} 
-                  className="flex items-center rounded-2xl cursor-pointer w-72 h-20 justify-center shadow-gray-400 shadow-md gap-5  bg-[rgba(255,255,255,0.5)]  hover:bg-[#ffc4656b] transition duration-300 ease-in-out"
+                  className="flex items-center rounded-2xl cursor-pointer w-72 h-20 justify-center shadow-gray-400 shadow-md gap-5  bg-[rgba(255,255,255,0.5)]  hover:bg-[#1f6c765b] transition duration-300 ease-in-out"
                >
                   {item.icon}
                   <div className="font-lato">

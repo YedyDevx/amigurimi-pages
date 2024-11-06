@@ -10,11 +10,11 @@ export default function About() {
     <div className="flex flex-col min-h-screen">
       <Header />
       <main className="flex-grow mt-16 bg-[#F3F4F6] pb-10 ">
-        <h1 className="font-lato text-4xl md:text-5xl font-bold text-center text-[#1f6c76] pt-5 mb-4">
+        <h1 className="font-lato text-4xl font-bold text-center text-[#1f6c76] pt-5 mb-4">
           Sobre mí
         </h1>
         <AnimatedShinyText>
-          <div className="font-itim text-2xl text-center mb-4">¿Quiénes somos?</div>
+          <div className="font-itim text-2xl text-center mb-4 ">¿Quiénes somos?</div>
         </AnimatedShinyText>
         
         <div className="flex flex-col md:flex-row items-center max-w-5xl mx-auto rounded-3xl overflow-hidden shadow-xl bg-white p-6 md:p-12 gap-8">

@@ -1,9 +1,29 @@
-import Link from "next/link";
+// Header.jsx
+"use client";
+
+import { useCart } from './header/CartContext';
+import { useState } from 'react';
 import Image from 'next/image';
 import Logo from '../images/logo.png';
 import { HiOutlineShoppingCart, HiOutlineUser } from "react-icons/hi";
+import { CiMenuKebab } from "react-icons/ci";
+import NavLinks from './header/NavLiks';
+import MobileMenu from './header/MobileMenu';
+import AddCart from './header/AddCart';
 
 export default function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const [isOpenCart, setOpenCart] = useState(false);
+  const openCart = () => {
+    setOpenCart(!isOpenCart);
+  };
+
+  const { cartItems } = useCart();
+
   return (
     <div className="h-[70px] fixed top-0 left-0 w-full z-50 bg-white shadow-md">
       <div className="max-w-[1200px] mx-auto flex justify-around items-center">
@@ -12,37 +32,34 @@ export default function Header() {
           src={Logo}
           alt="Logo"
         />
-        <nav className="flex gap-12 font-lato text-lg text-[#1f6c76] font-bold">
-          <Link 
-            className="relative group transition duration-300 ease-in-out hover:text-[#fb9a00]"
-            href="/">
-            Inicio
-            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#fb9a00] transition-all duration-300 group-hover:w-full"></span>
-          </Link>
-          <Link 
-            className="relative group transition duration-300 ease-in-out hover:text-[#f24877]"
-            href="/pages/products">
-            Productos
-            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#f24877] transition-all duration-300 group-hover:w-full"></span>
-          </Link>
-          <Link 
-            className="relative group transition duration-300 ease-in-out hover:text-[#fb9a00]"
-            href="/pages/about">
-            Sobre mi
-            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#fb9a00] transition-all duration-300 group-hover:w-full"></span>
-          </Link>
-          <Link
-            className="relative group transition duration-300 ease-in-out hover:text-[#f24877]"
-            href="/pages/contact">
-            Contacto
-            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#f24877] transition-all duration-300 group-hover:w-full"></span>
-          </Link>
-        </nav>
+        <NavLinks/>
         <div className="flex gap-5 text-4xl">
           <HiOutlineUser className="text-[#fb9a00] cursor-pointer transition-all duration-300 hover:scale-150" />
-          <HiOutlineShoppingCart className="text-[#f24877] cursor-pointer transition-all duration-300 hover:scale-150" />
+          <div className="relative">
+            <HiOutlineShoppingCart 
+              className="text-[#f24877] cursor-pointer transition-all duration-300 hover:scale-150" 
+              onClick={openCart}
+            />
+            {cartItems.length > 0 && (
+              <span className="absolute -top-1 -right-2 bg-green-600 text-white text-base font-bold rounded-full px-1">
+                {cartItems.length}
+              </span>
+            )}
+          </div>
+          <div className="flex lg:hidden">
+            <CiMenuKebab 
+              onClick={toggleMenu} 
+              className="text-[#1f6c76] cursor-pointer transition-all duration-300 hover:scale-150"
+            />
+          </div>
         </div>
       </div>
+      {isOpen && (
+        <MobileMenu/>
+      )}
+      {isOpenCart && (
+        <AddCart/>
+      )}
     </div>
   );
 }
