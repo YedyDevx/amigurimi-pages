@@ -6,7 +6,7 @@ const CartItem = ({ item, addToCart, removeFromCart }) => {
   const itemTotal = parseFloat(item.price.replace(/[$,.]/g, '')) * item.quantity;
 
   return (
-    <div className="w-[420px] h-24 bg-gray-50 rounded-xl flex p-3 items-center justify-between shadow-md shadow-gray-500 mb-3">
+    <div className="w-[400px] h-24 bg-gray-50 rounded-xl flex p-3 items-center justify-between shadow-md shadow-gray-500 mb-3">
       <div className='w-16 h-16 overflow-hidden bg-white rounded-lg shadow-md shadow-gray-500'>
         <Image src={item.img} alt={item.name} width={64} height={64} />
       </div>

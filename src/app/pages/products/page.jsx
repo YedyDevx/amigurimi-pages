@@ -1,8 +1,7 @@
 import Header from "../../components/Header";
-import Collections from "../../components/product/ProductCollections";
-import ProductsAll from "../../components/product/ProductAll";
 import Footer from "../../components/Footer";
 import AnimatedShinyText from "../../../components/ui/animated-shiny-text";
+import CollectionsAndProducts from "../../components/product/CollectionAndProducts"
 
 export default function Products() {
   return (
@@ -15,9 +14,8 @@ export default function Products() {
             </AnimatedShinyText>
          </div>
       <div className="mt-16">
-        <Collections/>
+        <CollectionsAndProducts/>
       </div>
-      <ProductsAll/>
       <Footer/>
     </div>
   );

@@ -9,6 +9,7 @@ import Img6 from '../../images/products/payasoalicia.png';
 import Img7 from '../../images/products/ricky.png';
 import Img8 from '../../images/products/totoro.png';
 import Img9 from '../../images/products/zoro.png';
+import ProductBuy from './ProductBuy';
 
 export default function Slider() {
    const { addToCart } = useCart(); 
@@ -62,9 +63,7 @@ export default function Slider() {
                         >
                            <HiOutlineShoppingCart className="text-2xl" />
                         </button>
-                        <button className="w-2/3 bg-[#f24877] text-white font-bold py-2 rounded-lg hover:bg-pink-600 transition-colors duration-300">
-                           Comprar ahora
-                        </button>
+                        <ProductBuy product={product} />
                      </div>
                   </div>
                ))}

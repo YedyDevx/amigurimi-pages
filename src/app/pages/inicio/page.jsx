@@ -1,10 +1,9 @@
 import SectionWelcome from "../../components/home/SectionWelcome";
 import FooterWelcome from "../../components/home/FooterWelcome";
 import Slider from "../../components/product/ProductSlider";
-import Collections from "../../components/product/ProductCollections";
-import ProductsAll from "../../components/product/ProductAll";
 import Footer from "../../components/Footer";
 import BtnWs from "../../components/BtnWs";
+import CollectionsAndProducts from "../../components/product/CollectionAndProducts";
 
 export default function Inicio() {
   return (
@@ -13,8 +12,7 @@ export default function Inicio() {
         <SectionWelcome/>
         <FooterWelcome />
         <Slider/>
-        <Collections/>
-        <ProductsAll/>
+        <CollectionsAndProducts/>
         <BtnWs/>
       </div>
       <Footer/>

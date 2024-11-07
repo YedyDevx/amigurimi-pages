@@ -20,7 +20,7 @@ export default function BtnWs() {
          >
             {hovered && (
                <span className="absolute -top-6 -right-20 transform -translate-x-1/2 text-white font-lato text-xs font-semibold p-2 rounded-lg shadow-lg">
-                  <PulsatingButton>Contactate Conmigo</PulsatingButton>
+                  <PulsatingButton>Contactanos</PulsatingButton>
                </span>
             )}
                <a 
