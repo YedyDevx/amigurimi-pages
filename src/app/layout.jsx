@@ -1,5 +1,5 @@
 import "./globals.css"; 
-import { CartProvider } from "../app/components/header/CartContext";
+import { CartProvider } from "../app/components/cart/CartContext";
 
 export const metadata = {
   title: "Landing pages - Chepicrochet.",

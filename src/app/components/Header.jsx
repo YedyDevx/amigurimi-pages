@@ -1,15 +1,13 @@
-// Header.jsx
 "use client";
-
-import { useCart } from './header/CartContext';
 import { useState } from 'react';
 import Image from 'next/image';
 import Logo from '../images/logo.png';
-import { HiOutlineShoppingCart, HiOutlineUser } from "react-icons/hi";
+import { HiOutlineShoppingCart } from "react-icons/hi";
 import { CiMenuKebab } from "react-icons/ci";
 import NavLinks from './header/NavLiks';
 import MobileMenu from './header/MobileMenu';
-import AddCart from './header/AddCart';
+import AddCart from './cart/AddCart';
+import { useCart } from './cart/CartContext';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,7 +32,6 @@ export default function Header() {
         />
         <NavLinks/>
         <div className="flex gap-5 text-4xl">
-          <HiOutlineUser className="text-[#fb9a00] cursor-pointer transition-all duration-300 hover:scale-150" />
           <div className="relative">
             <HiOutlineShoppingCart 
               className="text-[#f24877] cursor-pointer transition-all duration-300 hover:scale-150" 

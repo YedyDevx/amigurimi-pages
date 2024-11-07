@@ -6,7 +6,7 @@ const AnimatedShinyText = ({
   shimmerWidth = 100,
 }) => {
   return (
-    <div // Cambia <p> a <div>
+    <div 
       style={{
         "--shiny-width": `${shimmerWidth}px`
       }}

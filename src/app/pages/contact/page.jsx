@@ -2,13 +2,14 @@
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import AnimatedShinyText from "../../../components/ui/animated-shiny-text";
+import BtnWs from "../../components/BtnWs";
 
 export default function Contact() {
 
   return (
     <div className="flex flex-col min-h-screen">
     <Header />
-    <main className="flex-grow mt-10 bg-[#F3F4F6] py-10 px-4 relative">
+    <div className="flex-grow mt-10 bg-[#F3F4F6] py-10 px-4 relative">
       <div className="font-lato text-4xl  font-bold text-center text-[#1f6c76] pt-5 pb-4">
         Contáctanos
       </div>
@@ -77,7 +78,8 @@ export default function Contact() {
           Enviar Mensaje
         </button>
       </form>
-    </main>
+      <BtnWs/>
+    </div>
 
     <Footer />
   </div>

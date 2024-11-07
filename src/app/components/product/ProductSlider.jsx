@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import Marquee from '../../../components/ui/marquee';
 import { HiOutlineShoppingCart } from "react-icons/hi";
-import { useCart } from '../header/CartContext';
+import { useCart } from '../cart/CartContext';
 import Img2 from '../../images/products/florero.png';
 import Img3 from '../../images/products/caroline.png';
 import Img6 from '../../images/products/payasoalicia.png';

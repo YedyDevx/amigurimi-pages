@@ -1,6 +1,6 @@
 "use client";
 import { useState } from 'react';
-import { useCart } from '../header/CartContext';
+import { useCart } from '../cart/CartContext';
 import Image from 'next/image';
 import Img2 from '../../images/products/florero.png';
 import Img3 from '../../images/products/caroline.png';
@@ -9,6 +9,7 @@ import Img7 from '../../images/products/ricky.png';
 import Img8 from '../../images/products/totoro.png';
 import Img9 from '../../images/products/zoro.png';
 import { HiOutlineShoppingCart } from "react-icons/hi";
+import ProductBuy from './ProductBuy';
 
 const products = [
    { id: 1, name: "Vicent Van Gogh", category: "Art", price: "150.000$", img: Img2 },
@@ -17,40 +18,24 @@ const products = [
    { id: 4, name: "Ricky", category: "Series", price: "80.000$", img: Img7 },
    { id: 5, name: "Totoro", category: "Anime", price: "150.000$", img: Img8 },
    { id: 7, name: "Zoro - One Piece", category: "Anime", price: "80.000$", img: Img9 },
-   { id: 8, name: "Vicent Van Gogh", category: "Art", price: "150.000$", img: Img2 },
-   { id: 9, name: "Caroline", category: "Movies", price: "80.000$", img: Img3 },
-   { id: 10, name: "El Sombrerero", category: "Movies", price: "120.000$", img: Img6 },
-   { id: 11, name: "Ricky", category: "Series", price: "80.000$", img: Img7 },
-   { id: 12, name: "Totoro", category: "Anime", price: "150.000$", img: Img8 },
-   { id: 13, name: "Zoro - One Piece", category: "Anime", price: "80.000$", img: Img9 },{ id: 1, name: "Vicent Van Gogh", category: "Art", price: "150.000$", img: Img2 },
-   { id: 14, name: "Caroline", category: "Movies", price: "80.000$", img: Img3 },
-   { id: 15, name: "El Sombrerero", category: "Movies", price: "120.000$", img: Img6 },
-   { id: 16, name: "Ricky", category: "Series", price: "80.000$", img: Img7 },
-   { id: 17, name: "Totoro", category: "Anime", price: "150.000$", img: Img8 },
-   { id: 18, name: "Zoro - One Piece", category: "Anime", price: "80.000$", img: Img9 },
-   // Agrega un `id` único para cada producto adicional
 ];
 
-
-   // mostrar cuantos productos mostrar en la pagina
 const PRODUCT_PAGE = 8;
 
 export default function ProductsAll() {
    const [currentPage, setCurrentPage] = useState(1);
    const { addToCart } = useCart();
 
-   // calcula los productos a mostrar en la página actual
    const lastProduct = currentPage * PRODUCT_PAGE;
    const firstProduct = lastProduct - PRODUCT_PAGE;
    const currentProducts = products.slice(firstProduct, lastProduct);
 
-   // cambiar de pagina
    const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
-   // calculo del número total de paginas
    const totalPages = Math.ceil(products.length / PRODUCT_PAGE);
+
    return (
-      <div className="p-6 max-w-[1200px]  mx-auto ">
+      <div className="p-6 max-w-[1200px] mx-auto">
          <div className="flex gap-10 min-h-screen flex-wrap justify-center">
             {currentProducts.map((product, index) => (
                <div key={index} className="w-64 h-[440px] mb-5">
@@ -75,14 +60,13 @@ export default function ProductsAll() {
                         </p>
                      </div>
                      <div className="flex gap-4 w-full">
-                        <button className="w-1/3 bg-[#fb9a00] text-white font-bold py-2 rounded-lg hover:bg-[#ffae4a] transition-colors duration-300 flex justify-center items-center" 
-                        onClick={() => addToCart(product)}
+                        <button
+                           className="w-1/3 bg-[#fb9a00] text-white font-bold py-2 rounded-lg hover:bg-[#ffae4a] transition-colors duration-300 flex justify-center items-center"
+                           onClick={() => addToCart(product)}
                         >
                            <HiOutlineShoppingCart className="text-2xl" />
                         </button>
-                        <button className="w-2/3 bg-[#f24877] text-white font-bold py-2 rounded-lg hover:bg-pink-600 transition-colors duration-300">
-                           Comprar ahora
-                        </button>
+                        <ProductBuy product={product} />
                      </div>
                   </div>
                </div>
@@ -94,8 +78,8 @@ export default function ProductsAll() {
                   key={i}
                   onClick={() => paginate(i + 1)}
                   className={`px-4 py-2 rounded-lg sm:px-4 sm:py-2 ${
-                     currentPage === i + 1 
-                     ? 'bg-[#fb9a00] text-white font-bold text-xl sm:text-xl' 
+                     currentPage === i + 1
+                     ? 'bg-[#fb9a00] text-white font-bold text-xl sm:text-xl'
                      : 'bg-gray-300 text-[#105c65]'
                   } hover:bg-[#f24877] hover:text-white font-bold transition-colors duration-300`}
                >

@@ -2,14 +2,15 @@ import Header from "../../components/Header";
 import Image from "next/image";
 import Link from "next/link";
 import AboutImg from "../../images/ChepiCrochet-logo-2.png";
-import Footer from "@/app/components/Footer";
+import Footer from "../../components/Footer";
 import AnimatedShinyText from "../../../components/ui/animated-shiny-text";
+import BtnWs from "../../components/BtnWs";
 
 export default function About() {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
-      <main className="flex-grow mt-16 bg-[#F3F4F6] pb-10 ">
+      <div className="flex-grow mt-16 bg-[#F3F4F6] pb-10 ">
         <h1 className="font-lato text-4xl font-bold text-center text-[#1f6c76] pt-5 mb-4">
           Sobre mí
         </h1>
@@ -50,7 +51,8 @@ export default function About() {
             </div>
           </div>
         </div>
-      </main>
+        <BtnWs/>
+      </div>
       <Footer />
     </div>
   );
