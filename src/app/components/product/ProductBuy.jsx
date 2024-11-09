@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-const whatsappNumber = "+573017317519";
+const whatsappNumber = "+573154249690";
 
 const ProductBuy = ({ product }) => {
 

@@ -6,7 +6,7 @@ import PulsatingButton from "../../components/ui/pulsating-button";
 
 export default function BtnWs() {
    const [hovered, setHovered] = useState(false);
-   const whatsappNumber = "+573017317519";
+   const whatsappNumber = "+573154249690";
    const message = "Hola, vengo de tu página Chepicrochet y me gustaría tener más asesoramiento.";
 
    const encodedMessage = encodeURIComponent(message);

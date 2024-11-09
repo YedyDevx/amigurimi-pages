@@ -14,14 +14,14 @@ export default function Welcome() {
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold font-lato text-[#1f6c76] mb-4 absoulte">
                Bienvenidos
             </h1>
-            <p className="text-base px-4 sm:text-lg lg:text-xl text-gray-700 font-itim mb-8 lg:mb-12">
-               Todo hecho a mano con amor y dedicación, para ti.
+            <p className="text-base px-4 sm:text-lg lg:text-xl text-gray-700 font-itim mb-8 lg:mb-12 text-center">
+               Todos nuestros productos son hechos a mano con amor y dedicación, siempre contigo.
             </p>
             <Link
-               className="text-lg sm:text-xl font-lato font-bold bg-[#ffe7e795] text-[#1f6c76] border-2 border-[#1f6c76] px-4 sm:px-6 py-2 sm:py-3 rounded-full transition-all duration-300 hover:bg-[#1f6c76] hover:text-white hover:shadow-lg hover:-translate-y-1"
-               href="#allproducts"
+               className="text-lg sm:text-xl font-lato font-bold text-[#1f6c76] border-2 border-[#1f6c76] px-4 sm:px-6 py-2 sm:py-3 rounded-full transition-all duration-300 hover:bg-[#1f6c76] hover:text-white hover:shadow-lg hover:-translate-y-1"
+               href="../pages/products"
             >
-               Ver Colecciones
+               Conoce Nuestros Amigurumis
             </Link>
          </div>
        </>

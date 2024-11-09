@@ -33,7 +33,7 @@ export default function Footer() {
                      <h2 className="text-xl font-bold uppercase tracking-wide mb-2 border-b border-gray-300 pb-2">Contact Me</h2>
                      <div className="flex items-center gap-3">
                         <MdEmail className="text-2xl" />
-                        <span className="hover:underline">correo@chepicrochet.com</span>
+                        <span className="hover:underline">chepicrochetmania@gmail.com</span>
                      </div>
                      <div className="flex items-center gap-3">
                         <MdPhoneAndroid className="text-2xl" />
@@ -49,11 +49,11 @@ export default function Footer() {
                      <h2 className="text-xl font-bold uppercase tracking-wide mb-2 border-b border-gray-300 pb-2">Social Networks</h2>
                      <div className="flex items-center gap-3">
                         <FaTiktok className="text-2xl" />
-                        <a href="#" className="hover:text-pink-400 transition-colors duration-200 hover:underline">TikTok</a>
+                        <a href="https://www.tiktok.com/@chepidesign?_t=8rCoJ2LVD8y&_r=1" className="hover:text-pink-400 transition-colors duration-200 hover:underline">TikTok</a>
                      </div>
                      <div className="flex items-center gap-3">
                         <FaInstagram className="text-2xl" />
-                        <a href="#" className="hover:text-pink-400 transition-colors duration-200 hover:underline">Instagram</a>
+                        <a href="https://www.instagram.com/chepicrochet.co/" className="hover:text-pink-400 transition-colors duration-200 hover:underline">Instagram</a>
                      </div>
                      <div className="flex items-center gap-3">
                         <FaFacebookF className="text-2xl" />

@@ -8,15 +8,15 @@ export default function NavLinks() {
         <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#fb9a00] transition-all duration-300 group-hover:w-full"></span>
       </Link>
       <Link className="relative group transition duration-300 ease-in-out hover:text-[#f24877]" href="/pages/products">
-        Productos
+        Amigurumis
         <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#f24877] transition-all duration-300 group-hover:w-full"></span>
       </Link>
       <Link className="relative group transition duration-300 ease-in-out hover:text-[#fb9a00]" href="/pages/about">
-        Sobre mí
+        Sobre Nosotros
         <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#fb9a00] transition-all duration-300 group-hover:w-full"></span>
       </Link>
       <Link className="relative group transition duration-300 ease-in-out hover:text-[#f24877]" href="/pages/contact">
-        Contacto
+        Contáctanos
         <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#f24877] transition-all duration-300 group-hover:w-full"></span>
       </Link>
     </nav>

@@ -15,19 +15,19 @@ export default function Slider() {
    const { addToCart } = useCart(); 
 
    const products = [
-      { id: 1, name: "Vicent Van Gogh", category: "Art", price: "150.000$", img: Img2 },
-      { id: 2, name: "Caroline", category: "Movies", price: "80.000$", img: Img3 },
-      { id: 3, name: "El Sombrerero", category: "Movies", price: "120.000$", img: Img6 },
-      { id: 4, name: "Ricky", category: "Series", price: "80.000$", img: Img7 },
-      { id: 5, name: "Totoro", category: "Anime", price: "150.000$", img: Img8 },
-      { id: 7, name: "Zoro - One Piece", category: "Anime", price: "80.000$", img: Img9 }
+      { id: 1, name: "Vicent Van Gogh", category: "Artistas", price: "150.000$", status: "Encargo", img: Img2 },
+      { id: 2, name: "Caroline", category: "Caricaturas", price: "80.000$", status: "Disponible", img: Img3 },
+      { id: 3, name: "El Sombrerero", category: "Caricaturas", price: "120.000$", status: "Encargo", img: Img6 },
+      { id: 4, name: "Ricky", category: "Caricaturas", price: "80.000$", status: "Encargo", img: Img7 },
+      { id: 5, name: "Totoro", category: "Anime", price: "150.000$", status: "Disponible", img: Img8 },
+      { id: 7, name: "Zoro - One Piece", category: "Anime", price: "80.000$", status: "Disponible", img: Img9 },
    ];
 
    return (
       <div className="px-4 w-full h-[500px]">
          <div className='flex justify-between px-5 my-5'>
             <div className='sm:text-3xl text-base font-lato font-bold text-[#1f6c76]'>
-               Productos y colecciones:
+               Productos más vendidos:
             </div>
          </div>
          <Marquee gradient={false} speed={40} pauseOnHover={true}>

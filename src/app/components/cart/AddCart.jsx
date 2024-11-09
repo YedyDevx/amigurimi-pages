@@ -2,7 +2,7 @@ import { useCart } from './CartContext';
 import CartItem from './CartItem';
 import CartSummary from './CartSummary';
 
-const whatsappNumber = "+573017317519";
+const whatsappNumber = "+573154249690";
 
 export default function AddCart() {
   const { cartItems, addToCart, removeFromCart } = useCart();

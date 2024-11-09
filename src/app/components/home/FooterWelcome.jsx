@@ -4,18 +4,18 @@ import { FaShippingFast, FaShieldAlt, FaWhatsapp } from "react-icons/fa";
 const footerItems = [
    {
       icon: <FaShippingFast className="text-[46px] text-[#fb9a00]" />,
-      title: "Free Shipping",
-      description: "Free orders with discounts."
+      title: "Envío gratis",
+      description: "Pedidos gratuitos y con descuentos."
    },
    {
       icon: <FaShieldAlt className="text-[46px] text-[#f24877]" />,
-      title: "Security in every sense",
-      description: "We generate 100% trust."
+      title: "Compra 100% segura.",
+      description:"Tu compra es segura y confiable."
    },
    {
       icon: <FaWhatsapp className="text-[46px] text-[#1f6c76]" />,
-      title: "Contact me",
-      description: "I can advise you quickly."
+      title: "Contáctenos",
+      description: "Puedo asesorarte rápidamente."
    }
 ];
 
