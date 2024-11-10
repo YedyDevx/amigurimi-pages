@@ -28,7 +28,6 @@ export default function Contact() {
       console.log('FAILED...', error.text);
     }
   };
-
   useEffect(() => {
     if (status) {
       const timer = setTimeout(() => {
@@ -73,7 +72,6 @@ export default function Contact() {
               required
             />
           </div>
-
           <div className="mb-6">
             <label htmlFor="email" className="block text-[#136d75] font-lato text-lg font-semibold mb-2">
               Correo Electrónico
@@ -86,7 +84,6 @@ export default function Contact() {
               required
             />
           </div>
-
           <div className="mb-6">
             <label htmlFor="message" className="block text-[#136d75] font-lato text-lg font-semibold mb-2">
               Mensaje
@@ -103,7 +100,7 @@ export default function Contact() {
             type="submit"
             className="w-full md:w-auto bg-[#1f6c76] hover:bg-[#136d75] text-white font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out"
           >
-            Enviar Mensaje
+            Enviar Correo
           </button>
 
           {status === 'SUCCESS' && (
@@ -117,10 +114,9 @@ export default function Contact() {
             </div>
           )}
         </form>
-        
-        <BtnWs />
+        <BtnWs/>
       </div>
-      <Footer />
+      <Footer/>
     </div>
   );
 }
