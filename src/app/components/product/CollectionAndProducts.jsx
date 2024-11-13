@@ -134,7 +134,7 @@ export default function CollectionsAndProducts() {
          </div>
 
          <div className="p-6 max-w-[1200px] mx-auto">
-            <div className="flex my-5 justify-center gap-5">
+            <div className="flex flex-col items-center my-5 justify-center gap-5">
                <label className="mt-2 text-2xl flex flex-col font-lato text-[#fb9a00] font-extrabold tracking-wide">
                   Encuentra tu Amigurumi:
                   <span className='text-sm text-center'>

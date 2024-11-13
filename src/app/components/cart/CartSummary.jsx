@@ -6,7 +6,7 @@ const CartSummary = ({ total, cartMessage, whatsappNumber }) => {
   const sendMessage = encodeURIComponent(`${message}\n${cartMessage}\n${lastMessage}`);
 
   return (
-    <div className='flex gap-28 items-center'>
+    <div className='flex gap-8 items-center'>
       <div className="w-full flex items-center ">
         <span className="text-xl">Total:</span>
         <span className="text-xl">{total.toLocaleString('es-CO', { style: 'currency', currency: 'COP' })}</span>

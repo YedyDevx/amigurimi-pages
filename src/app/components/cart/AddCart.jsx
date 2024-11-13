@@ -17,7 +17,7 @@ export default function AddCart() {
     .join("\n");
 
   return (
-    <div className="w-[480px] md:rounded-br-xl md:rounded-bl-xl flex flex-col items-center gap-4 font-lato text-lg text-[#1f6c76] font-bold bg-white shadow-lg shadow-gray-800 p-4 absolute right-0 xl:right-10 2xl:right-[420px] top-[70px] z-40 max-h-[80vh] overflow-y-auto">
+    <div className="w-full md:w-[380px] lg:w-[380px] xl:w-[380px] md:rounded-br-xl md:rounded-bl-xl flex flex-col items-center gap-4 font-lato text-lg text-[#1f6c76] font-bold bg-white shadow-lg shadow-gray-800 p-4 absolute right-0 xl:right-5 2xl:right-[350px] top-[70px] z-40 max-h-[80vh] overflow-y-auto">
    <h2 className="text-xl">Carrito de Compras</h2>
       {cartItems.length > 0 ? (
         <>
