@@ -2,7 +2,6 @@
 import { useState } from 'react';
 import { useCart } from '../cart/CartContext';
 
-// Iconos
 import { FaDragon, FaPalette, FaUserCheck, FaCross, FaCat } from "react-icons/fa";
 import { GiCarKey } from "react-icons/gi";
 import { IoFlowerSharp } from "react-icons/io5";
@@ -11,7 +10,6 @@ import { BiSolidCameraMovie } from "react-icons/bi";
 import { TbChristmasTree } from "react-icons/tb";
 import { SiMarvelapp } from "react-icons/si";
 
-// Imágenes de productos
 import anime1 from '../../images/product/anime1.png';
 import Anime2 from '../../images/product/anime2.png';
 import Anime3 from '../../images/product/anime3.png';
@@ -44,13 +42,10 @@ import virgen2 from '../../images/product/virgen2.png';
 import virgen3 from '../../images/product/virgen3.png';
 import virgen4 from '../../images/product/virgen4.png';
 import llavero1 from '../../images/product/llavero1.png';
-
-// Componentes internos
 import CollectionItem from './CollectionItem';
 import ProductCard from './ProductCard';
 import Pagination from './Pagination';
 
-// Datos de las colecciones
 const CollectionItems = [
    { icon: <AiOutlineProduct className="text-[46px] text-[#1f6c76]" />, category: "Todos", description: "Todos los productos." },
    { icon: <BiSolidCameraMovie className="text-[46px] text-[#1f6c76]" />, category: "Personajes", description: "De series y películas." },

@@ -3,16 +3,17 @@ import { HiOutlineShoppingCart } from "react-icons/hi";
 import ProductBuy from './ProductBuy';
 
 export default function ProductCard({ product, addToCart }) {
+  
    return (
       <div className="w-64 h-[440px] mb-5">
          <div className="bg-white shadow-lg shadow-gray-600 rounded-2xl p-4 flex flex-col items-center transition-transform transform hover:scale-105 duration-300 ease-in-out">
             <div className="w-full h-60 rounded-lg overflow-hidden mb-4">
-               <Image
-                  className="object-cover w-full h-full"
-                  src={product.img}
-                  alt={product.name}
-                  layout="responsive"
-               />
+                  <Image
+                     className="object-cover w-full h-full"
+                     src={product.img}
+                     alt={product.name}
+                     layout="responsive"
+                  />
             </div>
             <div className="text-center mb-4">
                <h3 className="font-lato text-xl font-bold text-gray-800 mb-1">{product.name}</h3>
