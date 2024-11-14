@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import AnimatedShinyText from "../../../components/ui/animated-shiny-text";
-import CollectionsAndProducts from "../../components/product/CollectionAndProducts"
+import SectionAllProducts from "../../components/product/SectionAllProducts"
 import Spinner from "../../components/Spinner"
 
 export default function Products() {
@@ -22,20 +22,20 @@ export default function Products() {
         <Spinner/>
       ) : (
         <div>
-          <div className="flex flex-col items-center gap-3  mt-14 text-[#1f6c76] ">
+          <div className="flex flex-col items-center gap-3  mt-12 text-[#1f6c76] ">
             <div className="font-lato text-4xl font-bold text-center text-[#1f6c76] pt-14">
               Nuestros Amigurumis
             </div>
             <AnimatedShinyText>
               <div className="font-itim text-2xl text-center font-bol"> 
-                Todos elaborados a mano.
+                Todas nuestras colecciones:
               </div>
             </AnimatedShinyText>
           </div>
-          <CollectionsAndProducts/>
+          <SectionAllProducts/>
           <Footer/>
         </div>
       )}
     </div>
-  );
+  );  
 }

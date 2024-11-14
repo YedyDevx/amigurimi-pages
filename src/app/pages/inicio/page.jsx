@@ -3,7 +3,7 @@ import FooterWelcome from "../../components/home/FooterWelcome";
 import Slider from "../../components/product/ProductSlider";
 import Footer from "../../components/Footer";
 import BtnWs from "../../components/BtnWs";
-import CollectionsAndProducts from "../../components/product/CollectionAndProducts";
+import SectionProduct from "../../components/home/SectionProducts";
 
 export default function Inicio() {
   return (
@@ -12,7 +12,7 @@ export default function Inicio() {
         <SectionWelcome/>
         <FooterWelcome />
         <Slider/>
-        <CollectionsAndProducts/>
+        <SectionProduct/>
         <BtnWs/>
       </div>
       <Footer/>
