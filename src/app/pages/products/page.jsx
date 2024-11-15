@@ -5,6 +5,7 @@ import Footer from "../../components/Footer";
 import AnimatedShinyText from "../../../components/ui/animated-shiny-text";
 import SectionAllProducts from "../../components/product/SectionAllProducts"
 import Spinner from "../../components/Spinner"
+import SectionPack from "../../components/product/SectionPack";
 
 export default function Products() {
   const [loading, setLoading] = useState(true);
@@ -33,6 +34,7 @@ export default function Products() {
             </AnimatedShinyText>
           </div>
           <SectionAllProducts/>
+          <SectionPack/>
           <Footer/>
         </div>
       )}
