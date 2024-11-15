@@ -4,6 +4,7 @@ import Slider from "../../components/product/ProductSlider";
 import Footer from "../../components/Footer";
 import BtnWs from "../../components/BtnWs";
 import SectionProduct from "../../components/home/SectionProducts";
+import SectionPack from "../../components/product/SectionPack";
 
 export default function Inicio() {
   return (
@@ -14,6 +15,7 @@ export default function Inicio() {
         <Slider/>
         <SectionProduct/>
         <BtnWs/>
+        <SectionPack/>
       </div>
       <Footer/>
     </div>

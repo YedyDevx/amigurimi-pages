@@ -1,6 +1,6 @@
 export default function Pagination({ totalPages, currentPage, onPageChange }) {
    return (
-      <div className="flex justify-center gap-2 mt-6">
+      <div className="flex justify-center gap-2 mt-14">
          {Array.from({ length: totalPages }, (_, i) => (
             <button
                key={i}
