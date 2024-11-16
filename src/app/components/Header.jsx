@@ -1,4 +1,5 @@
 "use client";
+
 import { useState } from 'react';
 import Image from 'next/image';
 import Logo from '../images/logo.png';
@@ -8,6 +9,7 @@ import NavLinks from './header/NavLiks';
 import MobileMenu from './header/MobileMenu';
 import AddCart from './cart/AddCart';
 import { useCart } from './cart/CartContext';
+import { motion, AnimatePresence } from 'framer-motion';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,40 +25,48 @@ export default function Header() {
   const { cartItems } = useCart();
 
   return (
-    <div className="h-[70px] fixed top-0 left-0 w-full z-50 bg-white shadow-md">
+    <motion.div
+      className="h-[70px] fixed top-0 left-0 w-full z-50 bg-white shadow-md"
+      initial={{ y: -70 }}
+      animate={{ y: 0 }}
+      transition={{ duration: 1, ease: "easeOut" }}
+    >
       <div className="max-w-[1200px] mx-auto flex justify-around items-center">
-        <Image
-          className="w-24 m-1"
-          src={Logo}
-          alt="Logo"
-        />
-        <NavLinks/>
+        <Image className="w-24 m-1" src={Logo} alt="Logo" />
+        <NavLinks />
         <div className="flex gap-5 text-4xl">
           <div className="relative">
-            <HiOutlineShoppingCart 
-              className="text-[#f24877] cursor-pointer transition-all duration-300 hover:scale-150" 
+            <HiOutlineShoppingCart
+              className="text-[#f24877] cursor-pointer transition-all duration-300 hover:scale-150"
               onClick={openCart}
             />
             {cartItems.length > 0 && (
-              <span className="absolute -top-1 -right-2 bg-green-600 text-white text-base font-bold rounded-full px-1">
+              <span
+                className="absolute -top-1 -right-2 bg-green-600 text-white text-base font-bold rounded-full px-1" >
                 {cartItems.length}
               </span>
             )}
           </div>
           <div className="flex lg:hidden">
-            <CiMenuKebab 
-              onClick={toggleMenu} 
+            <CiMenuKebab
+              onClick={toggleMenu}
               className="text-[#1f6c76] cursor-pointer transition-all duration-300 hover:scale-150"
             />
           </div>
         </div>
       </div>
-      {isOpen && (
-        <MobileMenu/>
-      )}
-      {isOpenCart && (
-        <AddCart/>
-      )}
-    </div>
+      
+        {isOpen && (
+          <motion.div
+          animate={{ x: 0 }}>
+            <MobileMenu />
+          </motion.div>
+        )}
+        {isOpenCart && (
+          <div>
+            <AddCart />
+          </div>
+        )}
+    </motion.div>
   );
 }

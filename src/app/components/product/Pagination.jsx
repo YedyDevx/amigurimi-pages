@@ -1,6 +1,14 @@
+import { motion } from 'framer-motion'
+
 export default function Pagination({ totalPages, currentPage, onPageChange }) {
    return (
-      <div className="flex justify-center gap-2 mt-14">
+      <motion.div 
+      initial={{ opacity: 10 }}
+      animate={{ opacity: -10 }}
+      whileInView={{ opacity: 1, y: 1 }} 
+      exit={{ opacity: 100 }}
+      transition={{ duration: 1 }}
+      className="flex justify-center gap-2 mt-14">
          {Array.from({ length: totalPages }, (_, i) => (
             <button
                key={i}
@@ -14,6 +22,6 @@ export default function Pagination({ totalPages, currentPage, onPageChange }) {
                {i + 1}
             </button>
          ))}
-      </div>
+      </motion.div>
    );
 }

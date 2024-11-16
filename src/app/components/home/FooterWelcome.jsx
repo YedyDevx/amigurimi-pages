@@ -1,5 +1,6 @@
 import AnimatedShinyText from "../../../components/ui/animated-shiny-text"; 
 import { FaShippingFast, FaShieldAlt, FaWhatsapp } from "react-icons/fa";
+import { motion } from 'framer-motion';
 
 const footerItems = [
    {
@@ -10,7 +11,7 @@ const footerItems = [
    {
       icon: <FaShieldAlt className="text-[46px] text-[#f24877]" />,
       title: "Compra 100% segura.",
-      description:"Tu compra es segura y confiable."
+      description: "Tu compra es segura y confiable."
    },
    {
       icon: <FaWhatsapp className="text-[46px] text-[#1f6c76]" />,
@@ -23,7 +24,13 @@ export default function FooterWelcome() {
    return (
       <div className="max-w-[1500px] mx-auto flex justify-evenly gap-2 relative z-10 flex-wrap mt-10">
          {footerItems.map((item, index) => (
-            <div key={index} className="flex justify-center items-center rounded-2xl  w-80 h-20  shadow-gray-400 shadow-md gap-3 bg-[rgba(255,255,255,0.5)]">
+            <motion.div
+               key={index}
+               initial={{ opacity: 0, y: 20 }}
+               whileInView={{ opacity: 1, y: 0 }}
+               transition={{ delay: index * 0.2 }}
+               className="flex justify-center items-center rounded-2xl w-80 h-20 shadow-gray-400 shadow-md gap-3 bg-[rgba(255,255,255,0.5)]"
+            >
                {item.icon}
                <div className="font-lato">
                   <AnimatedShinyText>
@@ -31,7 +38,7 @@ export default function FooterWelcome() {
                      <div className="text-sm text-gray-500">{item.description}</div>
                   </AnimatedShinyText>
                </div>
-            </div>
+            </motion.div>
          ))}
       </div>
    );

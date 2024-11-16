@@ -1,6 +1,7 @@
+
 "use client";
 import { useState } from 'react';
-import { useCart } from '../cart/CartContext';
+import { useCart } from '../cart/CartContext'
 import ProductCard from './ProductCard';
 import Pagination from './Pagination';
 import products from '../../data/products';

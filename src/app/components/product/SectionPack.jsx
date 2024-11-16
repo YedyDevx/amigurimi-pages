@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-cards';
 import { EffectCards } from 'swiper/modules';
-
+import {motion} from 'framer-motion'
 import Pack1 from '../../images/pack/empaque.png';
 import Pack2 from '../../images/pack/pack.png';
 import Pack3 from '../../images/pack/pack-target.png';
@@ -12,13 +12,13 @@ import Pack3 from '../../images/pack/pack-target.png';
 const pack = [
   {
     img: Pack1,
-    title: 'Empaque Elegante',
+    title: 'Elegante',
     description:
       'Cada producto se presenta en un empaque único y cuidadosamente diseñado. Incluye una caja personalizada con el logotipo de nuestra marca y decoraciones distintivas.',
   },
   {
     img: Pack2,
-    title: 'Diseño Minimalista',
+    title: 'Minimalista',
     description:
       'Nuestro empaque destaca por su diseño minimalista, reflejando la esencia de cada producto con detalles simples pero impactantes.',
   },
@@ -35,9 +35,13 @@ export default function SectionPack() {
   const nextRef = useRef(null);
 
   return (
-    <div className="max-w-2xl mx-auto p-6">
+    <motion.div
+    initial={{ opacity: 0, y: 20 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ delay: 0.2 }}
+    className="max-w-2xl mx-auto p-6">
       <h2 className="text-2xl font-bold text-center text-[#1f6c76] mb-6">
-        Empaques Destacados
+        Empaquetado del Producto
       </h2>
 
       <div className="relative">
@@ -75,6 +79,6 @@ export default function SectionPack() {
           ))}
         </Swiper>
       </div>
-    </div>
+    </motion.div>
   );
 }
