@@ -1,3 +1,4 @@
+'use client'
 import { ColorRing } from 'react-loader-spinner'
 import { motion } from 'framer-motion'
 
