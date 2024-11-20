@@ -1,3 +1,5 @@
+'use client';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { HiOutlineShoppingCart } from "react-icons/hi";
 import ProductBuy from './ProductBuy';
@@ -5,7 +7,11 @@ import ProductBuy from './ProductBuy';
 export default function ProductCard({ product, addToCart }) {
   
    return (
-      <div className="w-64 h-[440px] mb-5">
+      <motion.div 
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.5}}
+      className="w-64 h-[440px] mb-5">
          <div className="bg-white shadow-lg shadow-gray-600 rounded-2xl p-4 flex flex-col items-center transition-transform transform hover:scale-105 duration-300 ease-in-out">
             <div className="w-full h-60 rounded-lg overflow-hidden mb-4">
                   <Image
@@ -31,6 +37,6 @@ export default function ProductCard({ product, addToCart }) {
                <ProductBuy product={product} />
             </div>
          </div>
-      </div>
+      </motion.div>
    );
 }

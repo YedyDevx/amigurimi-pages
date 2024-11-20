@@ -1,6 +1,7 @@
 'use client';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 import LogoFooter from '../images/ChepiCrochet-logo-2.png';
 import Bancolombia from '../images/icons/icons-bancolombia.jpg';
 import Nequi from '../images/icons/icons-nequi.jpg';
@@ -34,37 +35,48 @@ export default function Footer() {
                      </p>
                   </div>
 
-                  <div className="flex flex-col gap-4 text-gray-800">
-                     <h2 className="text-xl font-bold uppercase tracking-wide mb-2 border-b border-gray-300 pb-2">Contact Me</h2>
-                     <div className="flex items-center gap-3">
-                        <MdEmail className="text-2xl" />
-                        <span className="hover:underline">chepicrochetmania@gmail.com</span>
-                     </div>
-                     <div className="flex items-center gap-3">
-                        <MdPhoneAndroid className="text-2xl" />
-                        <span>(+57) 315 4249690</span>
-                     </div>
-                     <div className="flex items-center gap-3">
-                        <MdLocationPin className="text-2xl" />
-                        <span>Colombia, Antioquia - Apartado</span>
-                     </div>
+               {/* Contact */}
+               <div className="flex flex-col items-center text-center gap-4 text-gray-800">
+                  <h2 className="text-xl font-bold uppercase tracking-wide mb-2 border-b border-gray-300 pb-2">
+                     Contact Me
+                  </h2>
+                  <div className="flex items-center gap-3">
+                     <MdEmail className="text-2xl" />
+                     <span className="hover:underline">chepicrochetmania@gmail.com</span>
                   </div>
+                  <div className="flex items-center gap-3">
+                     <MdPhoneAndroid className="text-2xl" />
+                     <span>(+57) 315 4249690</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                     <MdLocationPin className="text-2xl" />
+                     <span>Colombia, Antioquia - Apartado</span>
+                  </div>
+               </div>
 
-                  <div className="flex flex-col gap-4 text-gray-800">
-                     <h2 className="text-xl font-bold uppercase tracking-wide mb-2 border-b border-gray-300 pb-2">Social Networks</h2>
-                     <div className="flex items-center gap-3">
-                        <FaTiktok className="text-2xl" />
-                        <a href="https://www.tiktok.com/@chepidesign?_t=8rCoJ2LVD8y&_r=1" className="hover:text-pink-400 transition-colors duration-200 hover:underline">TikTok</a>
-                     </div>
-                     <div className="flex items-center gap-3">
-                        <FaInstagram className="text-2xl" />
-                        <a href="https://www.instagram.com/chepicrochet.co/" className="hover:text-pink-400 transition-colors duration-200 hover:underline">Instagram</a>
-                     </div>
-                     <div className="flex items-center gap-3">
-                        <FaFacebookF className="text-2xl" />
-                        <a href="#" className="hover:text-pink-400 transition-colors duration-200 hover:underline">Facebook</a>
-                     </div>
+               <div className="flex flex-col items-center text-center gap-4 text-gray-800">
+                  <h2 className="text-xl font-bold uppercase tracking-wide mb-2 border-b border-gray-300 pb-2">
+                     Social Networks
+                  </h2>
+                  <div className="flex items-center gap-3">
+                     <FaTiktok className="text-2xl" />
+                     <a href="https://www.tiktok.com/@chepidesign?_t=8rCoJ2LVD8y&_r=1" className="hover:text-pink-400 transition-colors duration-200 hover:underline">
+                        TikTok
+                     </a>
                   </div>
+                  <div className="flex items-center gap-3">
+                     <FaInstagram className="text-2xl" />
+                     <a href="https://www.instagram.com/chepicrochet.co/" className="hover:text-pink-400 transition-colors duration-200 hover:underline">
+                        Instagram
+                     </a>
+                  </div>
+                  <div className="flex items-center gap-3">
+                     <FaFacebookF className="text-2xl" />
+                     <a href="#" className="hover:text-pink-400 transition-colors duration-200 hover:underline">
+                        Facebook
+                     </a>
+                  </div>
+               </div>
 
                   <div className="flex flex-col gap-3 items-center text-gray-800">
                      <h2 className="text-xl font-bold uppercase tracking-wide mb-3">Payment Methods</h2>

@@ -1,4 +1,5 @@
 'use client';
+import { motion } from 'framer-motion'
 import React, { useRef } from 'react';
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -36,7 +37,12 @@ export default function SectionPack() {
   const nextRef = useRef(null);
 
   return (
-    <div className="max-w-md mx-auto p-6">
+    <motion.div 
+    initial={{ opacity: 0, scale: 0.5 }} 
+    whileInView={{ opacity: 1, scale: 1 }} 
+    viewport={{ once: true, amount: 0.2 }} 
+    transition={{ duration: 1, ease: "easeOut" }} 
+    className="max-w-md mx-auto p-6">
       <h2 className="text-2xl font-bold text-center text-[#1f6c76] mb-6">
         Empaques Destacados
       </h2>
@@ -76,6 +82,6 @@ export default function SectionPack() {
           ))}
         </Swiper>
       </div>
-    </div>
+    </motion.div>
   );
 }
