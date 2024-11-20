@@ -1,6 +1,5 @@
 import "./globals.css"; 
 import { CartProvider } from "../app/components/cart/CartContext";
-import { AnimatePresence } from "framer-motion"
 
 export const metadata = {
   title: "Chepicrochet Website",
@@ -17,11 +16,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        {/* <AnimatePresence mode="wait" initial={false}> */}
-          <CartProvider>
-            {children}
-          </CartProvider>
-        {/* </AnimatePresence> */}
+        <CartProvider>
+          {children}
+        </CartProvider>
       </body>
     </html>
   );

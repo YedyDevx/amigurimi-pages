@@ -25,9 +25,9 @@ export default function Header() {
 
   return (
     <motion.div
-      initial={{ y: -100, opacity: 0 }} // Inicia desde arriba fuera de la pantalla
-      animate={{ y: 0, opacity: 1 }} // Se mueve a su posición original
-      transition={{ duration: 2, ease: "easeOut" }} // Controla la duración y el tipo de transición
+      initial={{ y: -100, opacity: 0 }} 
+      animate={{ y: 0, opacity: 1 }} 
+      transition={{ duration: 1, ease: "easeOut" }} 
       className="h-[70px] fixed top-0 left-0 w-full z-50 bg-white shadow-md"
     >
       <div className="max-w-[1200px] mx-auto flex justify-around items-center">
