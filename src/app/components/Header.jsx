@@ -8,7 +8,6 @@ import NavLinks from "./header/NavLiks";
 import MobileMenu from "./header/MobileMenu";
 import AddCart from "./cart/AddCart";
 import { useCart } from "./cart/CartContext";
-import { motion } from "framer-motion";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,10 +23,7 @@ export default function Header() {
   const { cartItems } = useCart();
 
   return (
-    <motion.div
-      initial={{ y: -100, opacity: 0 }} 
-      animate={{ y: 0, opacity: 1 }} 
-      transition={{ duration: 1, ease: "easeOut" }} 
+    <div
       className="h-[70px] fixed top-0 left-0 w-full z-50 bg-white shadow-md"
     >
       <div className="max-w-[1200px] mx-auto flex justify-around items-center">
@@ -55,6 +51,6 @@ export default function Header() {
       </div>
       {isOpen && <MobileMenu />}
       {isOpenCart && <AddCart />}
-    </motion.div>
+    </div>
   );
 }
