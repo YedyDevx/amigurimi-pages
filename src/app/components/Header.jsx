@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Logo from "../images/logo.png";
 import { HiOutlineShoppingCart } from "react-icons/hi";
@@ -23,7 +24,10 @@ export default function Header() {
   const { cartItems } = useCart();
 
   return (
-    <div
+    <motion.div
+      initial={{ y: -100, opacity: 0 }} 
+      animate={{ y: 0, opacity: 1 }} 
+      transition={{ duration: 1, ease: "easeOut" }}
       className="h-[70px] fixed top-0 left-0 w-full z-50 bg-white shadow-md"
     >
       <div className="max-w-[1200px] mx-auto flex justify-around items-center">
@@ -51,6 +55,6 @@ export default function Header() {
       </div>
       {isOpen && <MobileMenu />}
       {isOpenCart && <AddCart />}
-    </div>
+    </motion.div>
   );
 }

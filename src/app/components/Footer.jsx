@@ -1,3 +1,5 @@
+'use client';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import LogoFooter from '../images/ChepiCrochet-logo-2.png';
 import Bancolombia from '../images/icons/icons-bancolombia.jpg';
@@ -7,13 +9,16 @@ import Paypal from '../images/icons/icons-paypal.png';
 import { MdEmail, MdPhoneAndroid, MdLocationPin } from "react-icons/md";
 import { FaTiktok, FaFacebookF, FaInstagram, FaShippingFast } from "react-icons/fa";
 import AnimatedShinyText from "../../components/ui/animated-shiny-text"
-
 import Shadow from "./home/Shadow"
 
 export default function Footer() {
    return (
       <>
-        <footer className="w-full relative ">
+        <motion.footer 
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.5 }}
+        className="w-full relative ">
             <Shadow />
             <div className="w-full mx-auto  flex flex-col px-20 justify-around items-center flex-wrap relative pt-10 bg-white bg-opacity-50 text-gray-800 font-lato shadow-2xl">
                <div className='flex flex-col lg:flex-row gap-10 lg:gap-12 justify-between items-center max-w-[1500px]'>
@@ -84,7 +89,7 @@ export default function Footer() {
                   &copy; {new Date().getFullYear()} Chepi Crochet. All rights reserved.
                </div>
             </div>
-         </footer>
+         </motion.footer>
       </>
    );
 }
