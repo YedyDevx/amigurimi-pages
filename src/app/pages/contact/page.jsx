@@ -1,4 +1,5 @@
 "use client";
+import { motion } from 'framer-motion';
 import React, { useRef, useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import Header from "../../components/Header";
@@ -55,20 +56,31 @@ export default function Contact() {
       ) : (
       <div>
         <div className="flex-grow mt-10 bg-[#F3F4F6] py-10 px-4 relative">
-          <div className="font-lato text-4xl font-bold text-center text-[#1f6c76] pt-5 pb-4">
+          <motion.div 
+          initial={{ y: -100, opacity: 0 }} 
+          animate={{ y: 0, opacity: 1 }} 
+          transition={{ duration: 1, ease: "easeOut" }} 
+          className="font-lato text-4xl font-bold text-center text-[#1f6c76] pt-5 pb-4">
             Contáctanos
-          </div>
+          </motion.div>
           <AnimatedShinyText>
-            <div className="text-center text-lg mb-10 px-6 md:px-0 flex flex-col font-bold font-lato ">
+            <motion.div
+            initial={{ y: -100, opacity: 0 }} 
+            animate={{ y: 0, opacity: 1 }} 
+            transition={{ duration: 0.8, ease: "easeOut" }} 
+            className="text-center text-lg mb-10 px-6 md:px-0 flex flex-col font-bold font-lato ">
               <span>
                 ¿Tienes alguna pregunta o comentario?
               </span>
               <span>
                 ¡Nos encantaría saber de ti!
               </span>
-            </div>
+            </motion.div>
           </AnimatedShinyText>
-          <form
+          <motion.form
+            initial={{ opacity: 0, scale: 0 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1, ease: "easeOut" }} 
             ref={form} 
             onSubmit={sendEmail}
             className="max-w-3xl mx-auto bg-white p-8 md:p-12 rounded-2xl shadow-lg"
@@ -126,7 +138,7 @@ export default function Contact() {
                 <p className="text-white font-itim text-center text-lg">Hubo un error al enviar el mensaje. Intenta nuevamente.</p>
               </div>
             )}
-          </form>
+          </motion.form>
           <BtnWs/>
         </div>
         <Footer/>

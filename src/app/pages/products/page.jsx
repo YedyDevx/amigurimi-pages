@@ -1,4 +1,5 @@
 "use client"
+import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
@@ -23,16 +24,24 @@ export default function Products() {
         <Spinner/>
       ) : (
         <div>
-          <div className="flex flex-col items-center gap-3  mt-12 text-[#1f6c76] ">
-            <div className="font-lato text-4xl font-bold text-center text-[#1f6c76] pt-14">
+          <motion.div
+          initial={{ y: -100, opacity: 0 }} 
+          animate={{ y: 0, opacity: 1 }} 
+          transition={{ duration: 1, ease: "easeOut" }} 
+          className="flex flex-col items-center gap-3  mt-12 text-[#1f6c76] ">
+            <motion.div 
+            initial={{ y: -100, opacity: 0 }} 
+            animate={{ y: 0, opacity: 1 }} 
+            transition={{ duration: 1, ease: "easeOut" }} 
+            className="font-lato text-4xl font-bold text-center text-[#1f6c76] pt-14">
               Nuestros Amigurumis
-            </div>
+            </motion.div>
             <AnimatedShinyText>
               <div className="font-itim text-2xl text-center font-bol"> 
                 Todas nuestras colecciones:
               </div>
             </AnimatedShinyText>
-          </div>
+          </motion.div>
           <SectionAllProducts/>
           <SectionPack/>
           <Footer/>

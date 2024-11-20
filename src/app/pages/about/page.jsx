@@ -1,4 +1,5 @@
 "use client"
+import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import Header from "../../components/Header";
 import Image from "next/image";
@@ -27,14 +28,27 @@ export default function About() {
       ) : (
         <div>
           <div className="flex-grow mt-16 bg-[#F3F4F6] pb-10 ">
-            <h1 className="font-lato text-4xl font-bold text-center text-[#1f6c76] pt-5 mb-4">
+            <motion.h1 
+            initial={{ y: -100, opacity: 0 }} 
+            animate={{ y: 0, opacity: 1 }} 
+            transition={{ duration: 1, ease: "easeOut" }} 
+            className="font-lato text-4xl font-bold text-center text-[#1f6c76] pt-5 mb-4">
               Sobre mí
-            </h1>
+            </motion.h1>
             <AnimatedShinyText>
-              <div className="font-itim text-2xl text-center mb-4 ">¿Quiénes somos?</div>
+              <motion.div 
+              initial={{ y: -100, opacity: 0 }} 
+              animate={{ y: 0, opacity: 1 }} 
+              transition={{ duration: 1, ease: "easeOut" }} 
+              className="font-itim text-2xl text-center mb-4 ">¿Quiénes somos?</motion.div>
             </AnimatedShinyText>
             
-            <div className="flex flex-col md:flex-row items-center max-w-5xl mx-auto rounded-3xl overflow-hidden shadow-xl bg-white p-6 md:p-12 gap-8">
+            <motion.div 
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.2 }} 
+            transition={{ duration: 1, ease: "easeOut" }}
+            className="flex flex-col md:flex-row items-center max-w-5xl mx-auto rounded-3xl overflow-hidden shadow-xl bg-white p-6 md:p-12 gap-8">
               <Image
                 src={AboutImg}
                 alt="Logo de ChepiCrochet"
@@ -66,7 +80,7 @@ export default function About() {
                   </Link>
                 </div>
               </div>
-            </div>
+            </motion.div>
             <BtnWs/>
           </div>
           <Footer /> 

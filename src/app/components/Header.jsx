@@ -30,7 +30,7 @@ export default function Header() {
       transition={{ duration: 1, ease: "easeOut" }}
       className="h-[70px] fixed top-0 left-0 w-full z-50 bg-white shadow-md"
     >
-      <div className="max-w-[1200px] mx-auto flex justify-around items-center">
+      <div className="max-w-[1200px] mx-auto flex xl:justify-around justify-between items-center">
         <Image className="w-24 m-1" src={Logo} alt="Logo" />
         <NavLinks />
         <div className="flex gap-5 text-4xl">
