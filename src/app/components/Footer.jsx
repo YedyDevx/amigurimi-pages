@@ -1,7 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
 import LogoFooter from '../images/ChepiCrochet-logo-2.png';
 import Bancolombia from '../images/icons/icons-bancolombia.jpg';
 import Nequi from '../images/icons/icons-nequi.jpg';

@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-'use client';
-=======
 'use client'
->>>>>>> amigurumi-0.2
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import ImgFondo from '../../images/fondo.jpg';
@@ -12,14 +8,9 @@ import Welcome from './Welcome';
 export default function SectionInicio() {
    return (
       <motion.div 
-<<<<<<< HEAD
-      initial={{ opacity: 0, scale: 0 }}
-      animate={{ opacity: 1, scale: 1 }}
-=======
       initial={{ opacity: 0, scale: 0.8 }}
       whileInView={{ opacity: 1, scale: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }} 
->>>>>>> amigurumi-0.2
       transition={{ duration: 1, ease: "easeOut" }}
       className="2xl:max-w-[1200px] flex justify-center w-full m-auto relative mt-24 px-4 sm:px-6 lg:px-8">
          <Shadow/>

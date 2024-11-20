@@ -1,9 +1,5 @@
 'use client';
-<<<<<<< HEAD
 import { motion } from "framer-motion";
-=======
-import { motion } from 'framer-motion';
->>>>>>> amigurumi-0.2
 import AnimatedShinyText from "../../../components/ui/animated-shiny-text"; 
 import { FaShippingFast, FaShieldAlt, FaWhatsapp } from "react-icons/fa";
 
@@ -27,14 +23,10 @@ const footerItems = [
 
 export default function FooterWelcome() {
    return (
-<<<<<<< HEAD
       <motion.div 
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.1 }}
-=======
-      <div
->>>>>>> amigurumi-0.2
       className="max-w-[1500px] mx-auto flex justify-evenly gap-2 relative z-10 flex-wrap mt-10">
          {footerItems.map((item, index) => (
             <motion.div 

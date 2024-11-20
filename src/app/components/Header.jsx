@@ -27,11 +27,7 @@ export default function Header() {
     <motion.div
       initial={{ y: -100, opacity: 0 }} 
       animate={{ y: 0, opacity: 1 }} 
-<<<<<<< HEAD
       transition={{ duration: 1, ease: "easeOut" }}
-=======
-      transition={{ duration: 2, ease: "easeOut" }} 
->>>>>>> amigurumi-0.2
       className="h-[70px] fixed top-0 left-0 w-full z-50 bg-white shadow-md"
     >
       <div className="max-w-[1200px] mx-auto flex justify-around items-center">
