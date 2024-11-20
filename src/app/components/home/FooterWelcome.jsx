@@ -1,3 +1,5 @@
+'use client';
+import { motion } from 'framer-motion';
 import AnimatedShinyText from "../../../components/ui/animated-shiny-text"; 
 import { FaShippingFast, FaShieldAlt, FaWhatsapp } from "react-icons/fa";
 
@@ -21,7 +23,11 @@ const footerItems = [
 
 export default function FooterWelcome() {
    return (
-      <div className="max-w-[1500px] mx-auto flex justify-evenly gap-2 relative z-10 flex-wrap mt-10">
+      <motion.div 
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1.2 }}
+      className="max-w-[1500px] mx-auto flex justify-evenly gap-2 relative z-10 flex-wrap mt-10">
          {footerItems.map((item, index) => (
             <div key={index} className="flex justify-center items-center rounded-2xl  w-80 h-20  shadow-gray-400 shadow-md gap-3 bg-[rgba(255,255,255,0.5)]">
                {item.icon}
@@ -33,6 +39,6 @@ export default function FooterWelcome() {
                </div>
             </div>
          ))}
-      </div>
+      </motion.div>
    );
 }
