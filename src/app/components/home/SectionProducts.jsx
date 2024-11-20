@@ -1,5 +1,6 @@
 "use client";
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 import { useCart } from '../cart/CartContext';
 import ProductCard from '../product/ProductCard';
 import Pagination from '../product/Pagination';
@@ -28,7 +29,11 @@ export default function SectionProducts() {
    return (
       <div className="max-w-[1500px] m-auto ">
          <div className="p-6 max-w-[1200px] mx-auto">
-            <div className="flex flex-col md:flex-row lg:flex-row xl:flex-row 2xl:flex-row items-center my-5 justify-center gap-5">
+            <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.1}}
+            className="flex flex-col md:flex-row lg:flex-row xl:flex-row 2xl:flex-row items-center my-5 justify-center gap-5">
                <label className="mt-2 text-2xl flex flex-col font-lato text-[#fb9a00] font-extrabold tracking-wide">
                   Todos nuestros Amigurumi:
                   <span className='text-sm text-center'>
@@ -42,7 +47,7 @@ export default function SectionProducts() {
                   onChange={(e) => setSearchQuery(e.target.value)}
                   className="p-3 border text-xl font-itim  border-[#1f6c76] rounded-lg w-80 lg:w-96 focus:outline-none focus:ring-2 focus:ring-[#fb9a00] focus:border-transparent shadow-md placeholder-[#1f6c76] text-[#1f6c76] transition duration-300 ease-in-out"
                />
-            </div>
+            </motion.div>
             <div className="flex gap-10 min-h-screen flex-wrap justify-center">
                {currentProducts.map((product) => (
                   <ProductCard key={product.id} product={product} addToCart={addToCart} />
