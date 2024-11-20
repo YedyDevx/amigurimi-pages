@@ -29,7 +29,66 @@ import virgen1 from "../images/product/virgen1.png";
 import virgen2 from "../images/product/virgen2.png";
 import virgen3 from "../images/product/virgen3.png";
 import virgen4 from "../images/product/virgen4.png";
-import llavero1 from "../images/product/llavero1.png";
+
+//----------------------------------------------------------------------------
+//LLAVEROS
+//Llaveros de 10mil
+import llavero1 from "../images/llaveros/llavero10-1.png";
+import llavero2 from "../images/llaveros/llavero10-2.png";
+import llavero3 from "../images/llaveros/llavero10-3.png";
+import llavero4 from "../images/llaveros/llavero10-4.png";
+import llavero5 from "../images/llaveros/llavero10-5.png";
+import llavero6 from "../images/llaveros/llavero10-6.png";
+import llavero7 from "../images/llaveros/llavero10-7.png";
+import llavero8 from "../images/llaveros/llavero10-8.png";
+import llavero9 from "../images/llaveros/llavero10-9.png";
+
+//Llaveros de 15mil
+import llavero11 from "../images/llaveros/llavero15-1.png";
+import llavero12 from "../images/llaveros/llavero15-2.png";
+import llavero13 from "../images/llaveros/llavero15-3.png";
+import llavero14 from "../images/llaveros/llavero15-4.png";
+import llavero15 from "../images/llaveros/llavero15-5.png";
+import llavero16 from "../images/llaveros/llavero15-6.png";
+import llavero17 from "../images/llaveros/llavero15-7.png";
+import llavero18 from "../images/llaveros/llavero15-8.png";
+import llavero19 from "../images/llaveros/llavero15-9.png";
+import llavero20 from "../images/llaveros/llavero15-10.png";
+
+//Llaveros de 20mil
+import llavero21 from "../images/llaveros/llavero20-1.png";
+import llavero22 from "../images/llaveros/llavero20-2.png";
+import llavero23 from "../images/llaveros/llavero20-3.png";
+import llavero24 from "../images/llaveros/llavero20-4.png";
+import llavero25 from "../images/llaveros/llavero20-5.png";
+import llavero26 from "../images/llaveros/llavero20-6.png";
+
+//Llaveros de 25mil
+import llavero27 from "../images/llaveros/llavero25-1.png";
+import llavero28 from "../images/llaveros/llavero25-2.png";
+import llavero29 from "../images/llaveros/llavero25-3.png";
+import llavero30 from "../images/llaveros/llavero25-4.png";
+import llavero31 from "../images/llaveros/llavero25-5.png";
+import llavero32 from "../images/llaveros/llavero25-6.png";
+import llavero33 from "../images/llaveros/llavero25-7.png";
+import llavero34 from "../images/llaveros/llavero25-8.png";
+
+//llaveros de 35mil
+import llavero35 from "../images/llaveros/llavero35-1.png";
+import llavero36 from "../images/llaveros/llavero35-2.png";
+import llavero37 from "../images/llaveros/llavero35-3.png";
+import llavero38 from "../images/llaveros/llavero35-4.png";
+import llavero39 from "../images/llaveros/llavero35-5.png";
+import llavero40 from "../images/llaveros/llavero35-6.png";
+import llavero41 from "../images/llaveros/llavero35-7.png";
+import llavero42 from "../images/llaveros/llavero35-8.png";
+import llavero43 from "../images/llaveros/llavero35-9.png";
+import llavero44 from "../images/llaveros/llavero35-10.png";
+import llavero45 from "../images/llaveros/llavero35-11.png";
+
+//Llaveros de 40mil
+import llavero46 from "../images/llaveros/llavero40-2.png";
+import llavero47 from "../images/llaveros/llavero40-1.png";
 
 const products = [
   {
@@ -288,13 +347,393 @@ const products = [
     status: "Disponible",
     img: virgen4,
   },
+
+  //   id: 34,
+  //   name: "Llavero Zoro",
+  //   category: "Llaveros",
+  //   price: "65.000$",
+  //   status: "Disponible",
+  //   img: llavero1,
+  // },
+
+  //Llaveros---------------------------------------------------------------------
+  //Llaveros 10mil:
   {
     id: 34,
-    name: "Llavero Zoro",
-    category: "Llaveros",
-    price: "65.000$",
+    name: "Abejita",
+    category: "Llavero",
+    price: "10.000$",
     status: "Disponible",
     img: llavero1,
+  },
+  {
+    id: 35,
+    name: "Chainsaw Man",
+    category: "Llavero",
+    price: "10.000$",
+    status: "Disponible",
+    img: llavero2,
+  },
+  {
+    id: 36,
+    name: "Pollito Graduado",
+    category: "Llavero",
+    price: "10.000$",
+    status: "Disponible",
+    img: llavero3,
+  },
+  {
+    id: 37,
+    name: "Moustro de Navidad",
+    category: "Llavero",
+    price: "10.000$",
+    status: "Disponible",
+    img: llavero4,
+  },
+  {
+    id: 38,
+    name: "Ballenita",
+    category: "Llavero",
+    price: "10.000$",
+    status: "Disponible",
+    img: llavero5,
+  },
+  {
+    id: 39,
+    name: "Pollito",
+    category: "Llavero",
+    price: "10.000$",
+    status: "Disponible",
+    img: llavero6,
+  },
+  {
+    id: 40,
+    name: "Perrito Llavero",
+    category: "Llavero",
+    price: "10.000$",
+    status: "Disponible",
+    img: llavero7,
+  },
+  {
+    id: 41,
+    name: "Fresa",
+    category: "Llavero",
+    price: "10.000$",
+    status: "Disponible",
+    img: llavero8,
+  },
+  {
+    id: 42,
+    name: "Empanada",
+    category: "Llavero",
+    price: "10.000$",
+    status: "Disponible",
+    img: llavero9,
+  },
+  //Llaveros de 15
+  {
+    id: 43,
+    name: "Capibara",
+    category: "Llavero",
+    price: "15.000$",
+    status: "Disponible",
+    img: llavero11,
+  },
+  {
+    id: 43,
+    name: "Osito",
+    category: "Llavero",
+    price: "15.000$",
+    status: "Disponible",
+    img: llavero12,
+  },
+  {
+    id: 43,
+    name: "Gallina",
+    category: "Llavero",
+    price: "15.000$",
+    status: "Disponible",
+    img: llavero13,
+  },
+  {
+    id: 43,
+    name: "Capibara Navideña",
+    category: "Llavero",
+    price: "15.000$",
+    status: "Disponible",
+    img: llavero14,
+  },
+  {
+    id: 43,
+    name: "Taza de cafe con empanada",
+    category: "Llavero",
+    price: "15.000$",
+    status: "Disponible",
+    img: llavero15,
+  },
+  {
+    id: 43,
+    name: "Taza de cafe con galleta",
+    category: "Llavero",
+    price: "15.000$",
+    status: "Disponible",
+    img: llavero16,
+  },
+  {
+    id: 43,
+    name: "Taza de cafe con pan",
+    category: "Llavero",
+    price: "15.000$",
+    status: "Disponible",
+    img: llavero17,
+  },
+  {
+    id: 43,
+    name: "Taza de cafe con arepa",
+    category: "Llavero",
+    price: "15.000$",
+    status: "Disponible",
+    img: llavero18,
+  },
+  {
+    id: 43,
+    name: "Pollito con flor",
+    category: "Llavero",
+    price: "15.000$",
+    status: "Disponible",
+    img: llavero19,
+  },
+  {
+    id: 43,
+    name: "Gato Halloween",
+    category: "Llavero",
+    price: "15.000$",
+    status: "Disponible",
+    img: llavero20,
+  },
+
+  //Llaveros 20mil
+  {
+    id: 43,
+    name: "Flor Blanca",
+    category: "Llavero",
+    price: "20.000$",
+    status: "Disponible",
+    img: llavero21,
+  },
+  {
+    id: 43,
+    name: "Hamburguesa",
+    category: "Llavero",
+    price: "20.000$",
+    status: "Disponible",
+    img: llavero22,
+  },
+  {
+    id: 43,
+    name: "Minions",
+    category: "Llavero",
+    price: "20.000$",
+    status: "Disponible",
+    img: llavero23,
+  },
+  {
+    id: 43,
+    name: "Pareja de Ballena",
+    category: "Llavero",
+    price: "20.000$",
+    status: "Disponible",
+    img: llavero24,
+  },
+  {
+    id: 43,
+    name: "Amor",
+    category: "Llavero",
+    price: "20.000$",
+    status: "Disponible",
+    img: llavero25,
+  },
+  {
+    id: 43,
+    name: "Mousters",
+    category: "Llavero",
+    price: "20.000$",
+    status: "Disponible",
+    img: llavero26,
+  },
+
+  //Llaveros de 25mil
+  {
+    id: 44,
+    name: "Ballena Azul",
+    category: "Llavero",
+    price: "25.000$",
+    status: "Disponible",
+    img: llavero27,
+  },
+  {
+    id: 44,
+    name: "Ballena Rosa ",
+    category: "Llavero",
+    price: "25.000$",
+    status: "Disponible",
+    img: llavero28,
+  },
+  {
+    id: 44,
+    name: "Ballena Amarrillo",
+    category: "Llavero",
+    price: "25.000$",
+    status: "Disponible",
+    img: llavero29,
+  },
+  // {
+  //   id: 44,
+  //   name: "M",
+  //   category: "Llavero",
+  //   price: "25.000$",
+  //   status: "Disponible",
+  //   img: llavero27,
+  // },
+  {
+    id: 45,
+    name: "Erizo",
+    category: "Llavero",
+    price: "25.000$",
+    status: "Disponible",
+    img: llavero31,
+  },
+  {
+    id: 46,
+    name: "Cerdito",
+    category: "Llavero",
+    price: "25.000$",
+    status: "Disponible",
+    img: llavero32,
+  },
+  {
+    id: 47,
+    name: "Par de Galletas",
+    category: "Llavero",
+    price: "25.000$",
+    status: "Disponible",
+    img: llavero33,
+  },
+  {
+    id: 48,
+    name: "Ballena Morada",
+    category: "Llavero",
+    price: "25.000$",
+    status: "Disponible",
+    img: llavero34,
+  },
+
+  //llaveros de 35mil
+  {
+    id: 49,
+    name: "Mike Morales - Spider Man Black",
+    category: "Llavero",
+    price: "35.000$",
+    status: "Disponible",
+    img: llavero35,
+  },
+  {
+    id: 50,
+    name: "Son Gohan - Goku",
+    category: "Llavero",
+    price: "35.000$",
+    status: "Disponible",
+    img: llavero36,
+  },
+  {
+    id: 51,
+    name: "Tristeza - Intensamente",
+    category: "Llavero",
+    price: "35.000$",
+    status: "Disponible",
+    img: llavero37,
+  },
+  {
+    id: 52,
+    name: "Piccolo",
+    category: "Llavero",
+    price: "35.000$",
+    status: "Disponible",
+    img: llavero38,
+  },
+  {
+    id: 53,
+    name: "Capibara Grande",
+    category: "Llavero",
+    price: "35.000$",
+    status: "Disponible",
+    img: llavero39,
+  },
+  {
+    id: 54,
+    name: "Super Saiyan Dios - Goku",
+    category: "Llavero",
+    price: "35.000$",
+    status: "Disponible",
+    img: llavero40,
+  },
+  {
+    id: 55,
+    name: "Temor - Intensamente",
+    category: "Llavero",
+    price: "35.000$",
+    status: "Disponible",
+    img: llavero41,
+  },
+  {
+    id: 56,
+    name: "Yamcha - Goku",
+    category: "Llavero",
+    price: "35.000$",
+    status: "Disponible",
+    img: llavero42,
+  },
+  {
+    id: 57,
+    name: "Aburrimiento - Intensamente",
+    category: "Llavero",
+    price: "35.000$",
+    status: "Disponible",
+    img: llavero43,
+  },
+  {
+    id: 58,
+    name: "Envidia - Intensamente",
+    category: "Llavero",
+    price: "35.000$",
+    status: "Disponible",
+    img: llavero44,
+  },
+  {
+    id: 59,
+    name: "Oso Panda",
+    category: "Llavero",
+    price: "35.000$",
+    status: "Disponible",
+    img: llavero45,
+  },
+
+  //Llaveros de 40mil
+  {
+    id: 60,
+    name: "Spider-Ghost",
+    category: "Llavero",
+    price: "40.000$",
+    status: "Disponible",
+    img: llavero46,
+  },
+  {
+    id: 61,
+    name: "Coleccion de Intensamente 2",
+    category: "Llavero",
+    price: "Consultar",
+    status: "Disponible",
+    img: llavero47,
   },
 ];
 
