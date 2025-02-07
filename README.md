@@ -16,14 +16,6 @@ Aquí encontrarás **amigurumis, llaveros, flores tejidas y más**.
 
 ---
 
-## 🛠️ Tecnologías Utilizadas  
-
-🔹 **React.js** – Construcción de la interfaz interactiva.  
-🔹 **Firebase** – Manejo de datos en la nube y autenticación.  
-🔹 **Stripe** – Preparado para futuras integraciones de pago.  
-🔹 **Tailwind CSS** – Diseño moderno y eficiente.  
-
----
 
 ## 🔗 Enlaces del Proyecto  
 
