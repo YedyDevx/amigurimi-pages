@@ -12,11 +12,11 @@ import Img9 from '../../images/products/zoro.png';
 import ProductBuy from './ProductBuy';
 
 export default function Slider() {
-   const { addToCart } = useCart(); 
+   const { addToCart } = useCart();
 
    const products = [
       { id: 1, name: "Vicent Van Gogh", category: "Artistas", price: "150.000$", status: "Encargo", img: Img2 },
-      { id: 2, name: "Caroline", category: "Caricaturas", price: "80.000$", status: "Disponible", img: Img3 },
+      { id: 2, name: "Catoline", category: "Caricaturas", price: "80.000$", status: "Disponible", img: Img3 },
       { id: 3, name: "El Sombrerero", category: "Caricaturas", price: "120.000$", status: "Encargo", img: Img6 },
       { id: 4, name: "Ricky", category: "Caricaturas", price: "80.000$", status: "Encargo", img: Img7 },
       { id: 5, name: "Totoro", category: "Anime", price: "150.000$", status: "Disponible", img: Img8 },
@@ -57,9 +57,9 @@ export default function Slider() {
                         </p>
                      </div>
                      <div className="flex gap-4 w-full">
-                        <button 
-                           className="w-1/3 bg-[#fb9a00] text-white font-bold py-2 rounded-lg hover:bg-[#ffae4a] transition-colors duration-300 flex justify-center items-center" 
-                           onClick={() => addToCart(product)} 
+                        <button
+                           className="w-1/3 bg-[#fb9a00] text-white font-bold py-2 rounded-lg hover:bg-[#ffae4a] transition-colors duration-300 flex justify-center items-center"
+                           onClick={() => addToCart(product)}
                         >
                            <HiOutlineShoppingCart className="text-2xl" />
                         </button>

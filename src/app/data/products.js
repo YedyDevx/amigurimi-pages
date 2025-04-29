@@ -91,14 +91,14 @@ import llavero46 from "../images/llaveros/llavero40-2.png";
 import llavero47 from "../images/llaveros/llavero40-1.png";
 
 const products = [
-  {
-    id: 1,
-    name: "Sailor Moon",
-    category: "Anime",
-    price: "80.000$",
-    status: "Disponible",
-    img: anime1,
-  },
+  // {
+  //   id: 1,
+  //   name: "Sailor Moon",
+  //   category: "Anime",
+  //   price: "80.000$",
+  //   status: "Disponible",
+  //   img: anime1,
+  // },
   {
     id: 2,
     name: "Tanjito Kamado",
@@ -131,14 +131,14 @@ const products = [
     status: "Disponible",
     img: Anime5,
   },
-  {
-    id: 6,
-    name: "Combo Zoro",
-    category: "Anime",
-    price: "150.000$",
-    status: "Disponible",
-    img: Anime6,
-  },
+  // {
+  //   id: 6,
+  //   name: "Combo Zoro",
+  //   category: "Anime",
+  //   price: "150.000$",
+  //   status: "Disponible",
+  //   img: Anime6,
+  // },
   {
     id: 7,
     name: "Naruto Uzumaki",
@@ -322,22 +322,22 @@ const products = [
     price: "65.000$",
     status: "Disponible",
     img: virgen1,
-  },
-  {
-    id: 31,
-    name: "Angel",
-    category: "Religión",
-    price: "65.000$",
-    status: "Disponible",
-    img: virgen2,
-  },
-  {
-    id: 32,
-    name: "Angel",
-    category: "Religión",
-    price: "65.000$",
-    status: "Disponible",
-    img: virgen3,
+  // },
+  // {
+  //   id: 31,
+  //   name: "Angel",
+  //   category: "Religión",
+  //   price: "65.000$",
+  //   status: "Disponible",
+  //   img: virgen2,
+  // },
+  // {
+  //   id: 32,
+  //   name: "Angel",
+  //   category: "Religión",
+  //   price: "65.000$",
+  //   status: "Disponible",
+  //   img: virgen3,
   },
   {
     id: 33,
