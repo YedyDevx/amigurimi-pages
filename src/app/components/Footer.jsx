@@ -14,7 +14,7 @@ import Shadow from "./home/Shadow"
 export default function Footer() {
    return (
       <>
-        <motion.footer 
+        <motion.footer
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5 }}
@@ -59,19 +59,19 @@ export default function Footer() {
                   </h2>
                   <div className="flex items-center gap-3">
                      <FaTiktok className="text-2xl" />
-                     <a href="https://www.tiktok.com/@chepidesign?_t=8rCoJ2LVD8y&_r=1" className="hover:text-pink-400 transition-colors duration-200 hover:underline">
+                     <a href="https://www.tiktok.com/@chepidesign?_t=ZS-8vvNkC8gGsE&_r=1" className="hover:text-pink-400 transition-colors duration-200 hover:underline">
                         TikTok
                      </a>
                   </div>
                   <div className="flex items-center gap-3">
                      <FaInstagram className="text-2xl" />
-                     <a href="https://www.instagram.com/chepicrochet.co/" className="hover:text-pink-400 transition-colors duration-200 hover:underline">
+                     <a href="https://www.instagram.com/chepicrochet.co" className="hover:text-pink-400 transition-colors duration-200 hover:underline">
                         Instagram
                      </a>
                   </div>
                   <div className="flex items-center gap-3">
                      <FaFacebookF className="text-2xl" />
-                     <a href="#" className="hover:text-pink-400 transition-colors duration-200 hover:underline">
+                     <a href="https://www.facebook.com/share/15JY1YZgQa/" className="hover:text-pink-400 transition-colors duration-200 hover:underline">
                         Facebook
                      </a>
                   </div>
