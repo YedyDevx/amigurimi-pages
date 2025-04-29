@@ -16,7 +16,7 @@ export default function Slider() {
 
    const products = [
       { id: 1, name: "Vicent Van Gogh", category: "Artistas", price: "150.000$", status: "Encargo", img: Img2 },
-      { id: 2, name: "Catoline", category: "Caricaturas", price: "80.000$", status: "Disponible", img: Img3 },
+      { id: 2, name: "Caroline", category: "Caricaturas", price: "80.000$", status: "Disponible", img: Img3 },
       { id: 3, name: "El Sombrerero", category: "Caricaturas", price: "120.000$", status: "Encargo", img: Img6 },
       { id: 4, name: "Ricky", category: "Caricaturas", price: "80.000$", status: "Encargo", img: Img7 },
       { id: 5, name: "Totoro", category: "Anime", price: "150.000$", status: "Disponible", img: Img8 },
